@@ -2,51 +2,51 @@
   {
     "id": 1,
     "name": "Sailor Moon",
-    "image": "imgs/sailor-moon.jpg"
+    "image": "./imgs/sailor-moon.jpg"
   },
   {
     "id": 2,
     "name": "Sailor Mercury",
-    "image": "imgs/mercury.jpg"
+    "image": "./imgs/mercury.jpg"
   },
   {
     "id": 3,
     "name": "Sailor Mars",
-    "image": "imgs/mars.jpg"  
+    "image": "./imgs/mars.jpg"  
   },
   {
     "id": 4,
     "name": "Sailor Jupiter",
-    "image": "imgs/jupiter.jpg"  
+    "image": "./imgs/jupiter.jpg"  
   },
   {
     "id": 5,
     "name": "Sailor Venus",
-    "image": "imgs/venus.jpg"  
+    "image": "./imgs/venus.jpg"  
   },
   {
     "id": 6,
     "name": "Sailor Saturn",
-    "image": "imgs/saturn.jpg"  
+    "image": "./imgs/saturn.jpg"  
   },
   {
     "id": 7,
     "name": "Sailor Uranus",
-    "image": "imgs/uranus.jpg"  
+    "image": "./imgs/uranus.jpg"  
   },
   {
     "id": 8,
     "name": "Sailor Neptune",
-    "image": "imgs/neptune.jpg"  
+    "image": "./imgs/neptune.jpg"  
   },
   {
     "id": 9,
     "name": "Sailor Pluto",
-    "image": "imgs/pluto.jpg"  
+    "image": "./imgs/pluto.jpg"  
   },
   {
     "id": 10,
     "name": "Mini-Moon",
-    "image": "imgs/mini-moon.jpg"  
+    "image": "./imgs/mini-moon.jpg"  
   }
 ]

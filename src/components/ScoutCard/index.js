@@ -2,22 +2,11 @@ import React from "react";
 import "./style.css";
 
 function ScoutCard(props) {
+  console.log(props)
+
   return (
-    <div className="card auto">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-        </ul>
-      </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
-    </div>
+
+    <img onClick={() => props.imageClick(props.id, props.name)} className="rounded imageBorder" src={props.image} key={props.id}/>
   );
 }
 

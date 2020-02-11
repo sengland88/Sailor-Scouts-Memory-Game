@@ -9,7 +9,20 @@ import scouts from "./scouts.json";
 class App extends Component {
 
   state = {
-    scouts
+    scouts,
+    message: "Click An Image to Begin!",
+    score: 0, 
+    topScore: 0
+  };
+
+  imageClick = (id, name) => {
+
+ 
+
+    console.log("this works")
+    console.log(`You clicked on ${name}`)
+    console.log(`This is ${name} id number ${id}`)
+
   };
 
 
@@ -19,8 +32,8 @@ class App extends Component {
         <Title>The Sailor Scouts</Title>
           <Row>
             {this.state.scouts.map(scout => (
-              <Col size="sm-5">
-                <ScoutCard image={scout.image} />
+              <Col size="sm">
+                <ScoutCard id={scout.id} key={scout.id} name={scout.name} image={scout.image} imageClick={this.imageClick} />
               </Col>
             ))}
           </Row>
