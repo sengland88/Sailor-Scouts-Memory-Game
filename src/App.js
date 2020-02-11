@@ -10,14 +10,28 @@ class App extends Component {
 
   state = {
     scouts,
-    message: "Click An Image to Begin!",
+    message: "Click a Sailor Scout to Begin!",
     score: 0, 
     topScore: 0
   };
 
-  imageClick = (id, name) => {
+  shuffleImages = () => {
+    console.log(this.state.scouts)
+    this.setState({scouts: this.state.scouts.sort(() => Math.random() - 0.5)});
+  }
 
- 
+  componentDidMount() {
+    this.shuffleImages();
+  }
+
+  imageClick = (id, name) => {
+    //when the image is clicked, checks to see if the image has been click.
+    // if no, re-shuffle images, increase score by one, display a correct message
+    // if yes, re-shuffle images, and reset score and check to see if score is higher than top score, display a incorrect message
+
+    this.shuffleImages()
+
+    this.setState({score: this.state.score + 1});
 
     console.log("this works")
     console.log(`You clicked on ${name}`)
@@ -26,14 +40,22 @@ class App extends Component {
   };
 
 
+
+
   render() {
     return (
       <Container>
-        <Title>The Sailor Scouts</Title>
+        <Title>The Sailor Scouts. Your score is {this.state.score} || Top Score: {this.state.topScore}</Title>
           <Row>
             {this.state.scouts.map(scout => (
               <Col size="sm">
-                <ScoutCard id={scout.id} key={scout.id} name={scout.name} image={scout.image} imageClick={this.imageClick} />
+                <ScoutCard 
+                id={scout.id} 
+                key={scout.id} 
+                name={scout.name} 
+                image={scout.image}
+                shuffle={this.shuffleImages}
+                imageClick={this.imageClick} />
               </Col>
             ))}
           </Row>
