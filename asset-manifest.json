@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Sailor-Scouts-Memory-Game/static/css/main.2b570d1f.chunk.css",
-    "main.js": "/Sailor-Scouts-Memory-Game/static/js/main.aec1da6b.chunk.js",
-    "main.js.map": "/Sailor-Scouts-Memory-Game/static/js/main.aec1da6b.chunk.js.map",
+    "main.css": "/Sailor-Scouts-Memory-Game/static/css/main.f53bde90.chunk.css",
+    "main.js": "/Sailor-Scouts-Memory-Game/static/js/main.21954b60.chunk.js",
+    "main.js.map": "/Sailor-Scouts-Memory-Game/static/js/main.21954b60.chunk.js.map",
     "runtime-main.js": "/Sailor-Scouts-Memory-Game/static/js/runtime-main.5a348f3d.js",
     "runtime-main.js.map": "/Sailor-Scouts-Memory-Game/static/js/runtime-main.5a348f3d.js.map",
     "static/js/2.42701907.chunk.js": "/Sailor-Scouts-Memory-Game/static/js/2.42701907.chunk.js",
     "static/js/2.42701907.chunk.js.map": "/Sailor-Scouts-Memory-Game/static/js/2.42701907.chunk.js.map",
     "index.html": "/Sailor-Scouts-Memory-Game/index.html",
-    "precache-manifest.417d2345b6b1305f457e62543dfb06aa.js": "/Sailor-Scouts-Memory-Game/precache-manifest.417d2345b6b1305f457e62543dfb06aa.js",
+    "precache-manifest.c1925d94547dac164e19f876a80159cc.js": "/Sailor-Scouts-Memory-Game/precache-manifest.c1925d94547dac164e19f876a80159cc.js",
     "service-worker.js": "/Sailor-Scouts-Memory-Game/service-worker.js",
-    "static/css/main.2b570d1f.chunk.css.map": "/Sailor-Scouts-Memory-Game/static/css/main.2b570d1f.chunk.css.map",
+    "static/css/main.f53bde90.chunk.css.map": "/Sailor-Scouts-Memory-Game/static/css/main.f53bde90.chunk.css.map",
     "static/js/2.42701907.chunk.js.LICENSE.txt": "/Sailor-Scouts-Memory-Game/static/js/2.42701907.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5a348f3d.js",
     "static/js/2.42701907.chunk.js",
-    "static/css/main.2b570d1f.chunk.css",
-    "static/js/main.aec1da6b.chunk.js"
+    "static/css/main.f53bde90.chunk.css",
+    "static/js/main.21954b60.chunk.js"
   ]
 }
