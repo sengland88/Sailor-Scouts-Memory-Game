@@ -4,7 +4,7 @@ import "./style.css";
 function ScoutCard(props) {
   return (
 
-    <img onClick={() => props.imageClick(props.id, props.name)} className="rounded imageBorder" src={props.image} alt={props.name} key={props.id}/>
+    <img onClick={() => props.imageClick(props.id, props.name, props.clicked)} className="rounded imageBorder" src={props.image} alt={props.name} key={props.id}/>
   );
 }
 

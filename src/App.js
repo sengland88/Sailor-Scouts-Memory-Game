@@ -24,35 +24,53 @@ class App extends Component {
     this.shuffleImages();
   }
 
-  imageClick = (id, name) => {
-    //when the image is clicked, checks to see if the image has been click.
-    // if no, re-shuffle images, increase score by one, display a correct message
-    // if yes, re-shuffle images, and reset score and check to see if score is higher than top score, display a incorrect message
+  imageClick = (id, name, clicked) => {
 
-    this.shuffleImages()
+    const scoutImages = this.state.scouts
 
-    this.setState({score: this.state.score + 1});
+    scoutImages.forEach((scout) => {
 
-    console.log("this works")
-    console.log(`You clicked on ${name}`)
-    console.log(`This is ${name} id number ${id}`)
+      if (scout.id === id && scout.clicked) {
+        scoutImages.forEach((element) => {
+          element.clicked = false 
+        });   
+        this.setState({
+          message: "Sorry - You Lose.", 
+          score: 0});
+      } else if (scout.id === id && !scout.clicked) {
+          scout.clicked = true
+          this.setState({
+            message: "Yay - Adding 1 to Your Score.", 
+            score: this.state.score + 1,
+            topScore: this.state.score + 1 > this.state.topScore ? this.state.score + 1 : this.state.topScore
+          });
+      }
+    })
 
+    if (this.state.score +1 === scoutImages.length) {
+      alert("you won!")
+      this.setState({
+        message: "Play again!", 
+        score: 0,
+        topScore: 0});
+    } 
+
+    this.shuffleImages()    
   };
-
-
 
 
   render() {
     return (
       <Container>
-        <Title>The Sailor Scouts. Your score is {this.state.score} || Top Score: {this.state.topScore}</Title>
+        <Title>The Sailor Scouts - {this.state.message} Your score is {this.state.score} || Top Score: {this.state.topScore}</Title>
           <Row>
             {this.state.scouts.map(scout => (
               <Col size="sm">
                 <ScoutCard 
                 id={scout.id} 
                 key={scout.id} 
-                name={scout.name} 
+                name={scout.name}
+                // clicked={scout.clicked}
                 image={scout.image}
                 shuffle={this.shuffleImages}
                 imageClick={this.imageClick} />
