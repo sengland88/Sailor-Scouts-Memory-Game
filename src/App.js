@@ -51,9 +51,8 @@ class App extends Component {
     })
 
     if (this.state.score + 1 === scoutImages.length) {
-      alert("you won!")
       this.setState({
-        message: "Play again!", 
+        message: "You won! Play again!", 
         score: 0,
         topScore: 0});
     } 
