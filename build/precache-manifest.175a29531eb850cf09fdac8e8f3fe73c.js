@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b43e4dea12c706714da06a34db41874",
+    "revision": "41b3a7918dc16e6ce93260e98a233822",
     "url": "/Sailor-Scouts-Memory-Game/index.html"
   },
   {
-    "revision": "8fc1b57849a0aa7fa912",
-    "url": "/Sailor-Scouts-Memory-Game/static/css/main.f53bde90.chunk.css"
+    "revision": "6ae4f9d14f6bad2fb827",
+    "url": "/Sailor-Scouts-Memory-Game/static/css/main.a859bded.chunk.css"
   },
   {
     "revision": "e227c24583edb8067efb",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sailor-Scouts-Memory-Game/static/js/2.42701907.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8fc1b57849a0aa7fa912",
-    "url": "/Sailor-Scouts-Memory-Game/static/js/main.21954b60.chunk.js"
+    "revision": "6ae4f9d14f6bad2fb827",
+    "url": "/Sailor-Scouts-Memory-Game/static/js/main.ec0f6a84.chunk.js"
   },
   {
     "revision": "6e38b909a9ab6b9f2afc",
