@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import ScoutCard from "./components/ScoutCard";
+import Nav from "./components/Nav";
+import Jumbotron from "./components/Jumbotron";
 import Container from "./components/Container";
 import Title from "./components/Title";
 import Row from "./components/Row";
+import ScoutCard from "./components/ScoutCard";
 import Col from "./components/Col";
 import scouts from "./scouts.json";
 
@@ -35,19 +37,20 @@ class App extends Component {
           element.clicked = false 
         });   
         this.setState({
-          message: "Sorry - You Lose.", 
+          message: "Sorry - You Already Clicked That Scout. Try Again!",
           score: 0});
+          console.log("lost")
       } else if (scout.id === id && !scout.clicked) {
           scout.clicked = true
           this.setState({
-            message: "Yay - Adding 1 to Your Score.", 
+            message: "Great Choice!", 
             score: this.state.score + 1,
             topScore: this.state.score + 1 > this.state.topScore ? this.state.score + 1 : this.state.topScore
           });
       }
     })
 
-    if (this.state.score +1 === scoutImages.length) {
+    if (this.state.score + 1 === scoutImages.length) {
       alert("you won!")
       this.setState({
         message: "Play again!", 
@@ -61,8 +64,15 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+      <Nav/>
+      <Jumbotron/>
       <Container>
-        <Title>The Sailor Scouts - {this.state.message} Your score is {this.state.score} || Top Score: {this.state.topScore}</Title>
+        <Title
+          message={this.state.message}
+          score={this.state.score}
+          topscore={this.state.topScore}        
+        ></Title>
           <Row>
             {this.state.scouts.map(scout => (
               <Col size="sm">
@@ -70,7 +80,6 @@ class App extends Component {
                 id={scout.id} 
                 key={scout.id} 
                 name={scout.name}
-                // clicked={scout.clicked}
                 image={scout.image}
                 shuffle={this.shuffleImages}
                 imageClick={this.imageClick} />
@@ -78,6 +87,7 @@ class App extends Component {
             ))}
           </Row>
       </Container>
+      </div>
     );
   }
 }

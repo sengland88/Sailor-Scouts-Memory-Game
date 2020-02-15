@@ -1,0 +1,15 @@
+#navi {
+    background-color: #445ba9;
+}
+
+.photo {
+    height: 48px;
+    width: 48px;
+    margin-right: 15px;
+}
+
+#thePhoto {
+    font-size: 32px;
+    margin-top: 10px;
+    color: #f7a9c6;
+}

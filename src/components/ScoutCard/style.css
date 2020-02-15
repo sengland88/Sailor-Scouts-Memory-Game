@@ -2,3 +2,8 @@
   border: solid 3px purple;
   margin: 20px
 }
+
+.imageBorder:hover { 
+  border: solid 3px yellow;
+  box-shadow: 10px 10px 5px grey;  
+}
